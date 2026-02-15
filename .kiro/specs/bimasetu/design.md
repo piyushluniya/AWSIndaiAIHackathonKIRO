@@ -502,7 +502,7 @@ RejectionAnalysis {
 | Function | AWS Service | Why This Service |
 |----------|------------|-----------------|
 | WhatsApp Integration | WhatsApp Business API via API Gateway + Lambda | Handles 500M+ potential users on their preferred messaging platform. Serverless = auto-scaling. |
-| Voice Processing | Amazon Transcribe (Hindi, Tamil, Telugu, Bengali, Marathi, English) | Converts emergency voice notes to actionable text in < 3 seconds. Supports Indian languages natively. |
+| Voice Processing | Amazon Transcribe (Hindi, Tamil, Telugu, Bengali, Marathi, English) | Converts emergency voice notes to actionable text in few seconds. Supports Indian languages natively. |
 | Document Intelligence | Amazon Textract + Amazon Bedrock (multi-modal) | Parses insurance PDFs and photographed policy documents with table/form extraction. Bedrock adds semantic understanding. |
 | AI Reasoning Engine | Amazon Bedrock (Claude Sonnet 4) with Agents for Bedrock | Multi-agent orchestration, policy reasoning, coverage analysis, and natural language generation. |
 | Knowledge Base | Amazon Bedrock Knowledge Bases with OpenSearch Serverless | RAG over: IRDAI regulations, insurer networks, hospitals, drug formularies, card-insurance mappings. |
