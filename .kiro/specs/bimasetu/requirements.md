@@ -2,7 +2,7 @@
 
 ## Introduction
 
-BimaSetu is a WhatsApp-based AI assistant that transforms how Indians interact with insurance across the entire insurance lifecycle. The system addresses critical information asymmetry in the Indian insurance market by providing four specialized modes: Hidden Insurance Discovery, BimaSalah (Insurance Counsel), BimaGuru (Policy Decoder), and BimaRakshak (Emergency Guardian). The platform operates entirely within WhatsApp, leveraging AI agents to provide personalized insurance guidance, emergency response, and policy management in vernacular languages.
+BimaSetu is a WhatsApp-based AI assistant that transforms how Indians interact with insurance across the entire insurance lifecycle. The system addresses critical information asymmetry in the Indian insurance market by providing four specialized modes: Hidden Insurance Discovery, BimaSalah (Insurance Counsel), BimaGuru (Policy Decoder), and BimaRakshak (Emergency Guardian). The platform leverages AI agents to provide personalized insurance guidance, emergency response, and policy management in vernacular languages.
 
 ## Glossary
 
@@ -35,9 +35,9 @@ BimaSetu is a WhatsApp-based AI assistant that transforms how Indians interact w
 
 #### Acceptance Criteria
 
-1. WHEN a user sends a message to the BimaSetu WhatsApp number, THE BimaSetu_System SHALL receive and process the message within 3 seconds
+1. WHEN a user sends a message to the BimaSetu WhatsApp number, THE BimaSetu_System SHALL receive and process the message within few seconds
 2. WHEN a user sends a voice message in Hindi or regional languages, THE BimaSetu_System SHALL transcribe the audio to text
-3. WHEN the system generates a response, THE BimaSetu_System SHALL send the response through WhatsApp within 5 seconds
+3. WHEN the system generates a response, THE BimaSetu_System SHALL send the response through WhatsApp
 4. WHEN a user uploads a PDF document, THE BimaSetu_System SHALL accept PDF files up to 25MB in size
 5. THE BimaSetu_System SHALL maintain conversation context across multiple message exchanges within a session
 
@@ -110,15 +110,15 @@ BimaSetu is a WhatsApp-based AI assistant that transforms how Indians interact w
 
 #### Acceptance Criteria
 
-1. WHEN a user indicates a medical emergency, THE Orchestrator_Agent SHALL activate Emergency_Mode within 2 seconds
+1. WHEN a user indicates a medical emergency, THE Orchestrator_Agent SHALL activate Emergency_Mode within seconds
 2. WHEN Emergency_Mode is activated, THE Triage_Agent SHALL perform voice-based medical triage in Hindi or the user's preferred language
 3. WHEN triage is complete, THE Triage_Agent SHALL assess emergency severity and required medical specialty
-4. WHEN emergency assessment is complete, THE Hospital_Matching_Agent SHALL identify suitable hospitals within 10 seconds
+4. WHEN emergency assessment is complete, THE Hospital_Matching_Agent SHALL identify suitable hospitals
 5. WHEN matching hospitals, THE Hospital_Matching_Agent SHALL consider proximity, cashless acceptance, required specialty, and bed availability
 6. WHEN hospitals are identified, THE BimaSetu_System SHALL present top 3 hospital options with distance, estimated time, and cashless status
 7. WHEN a hospital is selected, THE BimaSetu_System SHALL provide ambulance dispatch options
 8. WHEN ambulance is dispatched, THE BimaSetu_System SHALL send pre-alert to the selected hospital with patient information and insurance details
-9. THE Emergency_Mode SHALL complete the entire workflow from triage to hospital pre-alert within 90 seconds
+9. THE Emergency_Mode SHALL complete the entire workflow from triage to hospital pre-alert within few seconds
 
 ### Requirement 8: Hospital Matching and Selection
 
@@ -230,10 +230,10 @@ BimaSetu is a WhatsApp-based AI assistant that transforms how Indians interact w
 
 #### Acceptance Criteria
 
-1. THE BimaSetu_System SHALL respond to text messages within 5 seconds for 95% of requests
-2. THE BimaSetu_System SHALL complete policy PDF parsing within 10 seconds for documents under 50 pages
-3. THE Emergency_Mode SHALL complete hospital matching within 10 seconds
-4. THE BimaSetu_System SHALL transcribe voice messages within 5 seconds for messages under 60 seconds
+1. THE BimaSetu_System SHALL respond to text messages within few seconds for 95% of requests
+2. THE BimaSetu_System SHALL complete policy PDF parsing within seconds for documents
+3. THE Emergency_Mode SHALL complete hospital matching within seconds
+4. THE BimaSetu_System SHALL transcribe voice messages within seconds for messages 
 5. WHEN system load is high, THE BimaSetu_System SHALL queue requests and inform users of expected wait time
 
 ### Requirement 17: Error Handling and Recovery
